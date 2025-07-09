@@ -1,35 +1,81 @@
-OCR compare
+# OCR Compare
 
-To create data, run prototype\src\create_sample_data.py
+To create data, run:
 
-Install package: `pip install -r requirements.txt`
+```
+prototype\src\create_sample_data.py
+```
+
+Install required packages:
+
+```
+pip install -r requirements.txt
+```
 
 ## Tesseract OCR
 
-Install Tesseract OCR [here](https://www.youtube.com/watch?v=2kWvk4C1pMo)
+Install Tesseract OCR:
+[https://www.youtube.com/watch?v=2kWvk4C1pMo](https://www.youtube.com/watch?v=2kWvk4C1pMo)
 
-For French, install pretrained model from [here](https://github.com/tesseract-ocr/tessdata/raw/main/fra.traineddata) then put it manual into `C:\Program Files\Tesseract-OCR\tessdata\`
+For French, download the pretrained model:
+[https://github.com/tesseract-ocr/tessdata/raw/main/fra.traineddata](https://github.com/tesseract-ocr/tessdata/raw/main/fra.traineddata)
 
-run `python prototype\test_ocr\tesseract.py` to test
+Place the file manually into:
+
+```
+C:\Program Files\Tesseract-OCR\tessdata\
+```
+
+To test:
+
+```
+python prototype\test_ocr\tesseract.py
+```
 
 ## Cloud Vision API
 
-Enter [Google Cloud Console](https://console.cloud.google.com/)
+1. Go to:
+   [https://console.cloud.google.com/](https://console.cloud.google.com/)
 
-Create new project
+2. Create a new project
 
-Turn API on: Cloud Vision API
+3. Enable the API: **Cloud Vision API**
 
-Get API key and put in prototypes/.env
+4. Get your API key and add it to the `.env` file in the `prototypes/` folder:
 
+```
 Cloud_vision_key = 'key_here'
+```
 
 ## EasyOCR
 
-run `prototype\test_ocr\easyOCR.py`
+To test:
+
+```
+python prototype\test_ocr\easyOCR.py
+```
 
 ## Kraken
 
-Download pretrained model from [here](https://zenodo.org/records/2577813/files/en_best.mlmodel?download=1) and put into prototypes/models/
+Download the pretrained model:
+[https://zenodo.org/records/2577813/files/en_best.mlmodel?download=1](https://zenodo.org/records/2577813/files/en_best.mlmodel?download=1)
 
-run `prototype\test_ocr\kraken_ocr.py`
+Place it into:
+
+```
+prototypes/models/
+```
+
+To test:
+
+```
+python prototype\test_ocr\kraken_ocr.py
+```
+
+## PaddleOCR
+
+To test:
+
+```
+python prototype\test_ocr\PaddleOCR.py
+```

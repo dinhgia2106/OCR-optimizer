@@ -9,3 +9,5 @@ __pycache__/
 *.pyzwz
 *.pyzwzw
 .env
+/models
+*.mlmodel

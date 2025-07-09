@@ -1,0 +1,30 @@
+# Core dependencies
+opencv-python==4.11.0.86
+Pillow==11.1.0
+numpy==1.26.4
+scipy==1.13.1
+
+# Tesseract OCR
+pytesseract==0.3.13
+
+# Cloud Vision API
+google-cloud-vision==3.8.1
+python-dotenv==1.0.0
+
+# EasyOCR
+easyocr==1.7.2
+torch==2.5.1
+torchvision==0.20.1
+
+# Kraken OCR  
+kraken[bbox]==5.3.0
+
+# PaddleOCR
+paddlepaddle==2.6.1
+paddleocr==2.8.1
+
+# Image processing and utilities
+scikit-image==0.24.0
+beautifulsoup4==4.12.3
+requests==2.28.2
+tqdm==4.65.2 

@@ -1,0 +1,531 @@
+{
+  "trade_off_log": {
+    "model_info": {
+      "name": "PaddleOCR",
+      "version": "2.8.1",
+      "type": "Open-source",
+      "deployment": "On-premise"
+    },
+    "accuracy_vs_latency": {
+      "average_accuracy": 0.9065831462782249,
+      "average_latency_seconds": 1.0789837300777436,
+      "total_files_processed": 40
+    },
+    "deployment_type": {
+      "on_premise": true,
+      "cloud": false,
+      "hybrid": false
+    },
+    "licensing": {
+      "open_source": true,
+      "commercial": false,
+      "license_type": "Apache 2.0"
+    }
+  },
+  "detailed_results": {
+    "english": {
+      "average_metrics": {
+        "similarity_ratio": 0.9204666355121571,
+        "normalized_edit_distance": 0.903385933481825,
+        "word_accuracy": 0.6353980123587147,
+        "character_accuracy": 0.903385933481825,
+        "edit_distance": 24.8
+      },
+      "processed_count": 20,
+      "results": {
+        "sample_01.jpg": {
+          "predicted": "InvoiceNo.3758 Client:Digital Progress.Co Address:45 Republic Avenue,Chicago,IL 60602 DescriptionPrice -Monthly Technical Support:250$ -StrategicConsultation:1500$ Total:1750$",
+          "ground_truth": "Invoice No. 3758 Client: Digital Progress Co. Address: 45 Republic Avenue, Chicago, IL 60602 Description Price -------------------------------- - Monthly Technical Support: 250$ - Strategic Consultation: 1500$ -------------------------------- Total: 1750$",
+          "metrics": {
+            "similarity_ratio": 0.7441860465116279,
+            "normalized_edit_distance": 0.6823529411764706,
+            "word_accuracy": 0.10344827586206896,
+            "character_accuracy": 0.6823529411764706,
+            "edit_distance": 81
+          },
+          "processing_time": 2.9326469898223877
+        },
+        "sample_02.jpg": {
+          "predicted": "Monthly ActivityReport Date:10/8/2025 KeyPoints: We plan to launch a new product in the next semester Our marketing initiatives have reached a new target audience Customer satisfaction remains our top priority,with a score of 9.2/10.",
+          "ground_truth": "Monthly Activity Report Date: 10/8/2025 Key Points: • We plan to launch a new product in the next semester. • Our marketing initiatives have reached a new target audience. • Customer satisfaction remains our top priority, with a score of 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9748953974895398,
+            "normalized_edit_distance": 0.9510204081632653,
+            "word_accuracy": 0.6829268292682927,
+            "character_accuracy": 0.9510204081632653,
+            "edit_distance": 12
+          },
+          "processing_time": 1.0055842399597168
+        },
+        "sample_03.jpg": {
+          "predicted": "AnnualReview2025 Date:15/6/2025 KeyPoints: Revenue has increased by 12% this quarter. Customer satisfaction remains.our top prioritywith a score.of 9.2/10. Our marketing initiatives have reached a new target audience",
+          "ground_truth": "Annual Review 2025 Date: 15/6/2025 Key Points: • Revenue has increased by 12% this quarter. • Customer satisfaction remains our top priority, with a score of 9.2/10. • Our marketing initiatives have reached a new target audience.",
+          "metrics": {
+            "similarity_ratio": 0.9617977528089887,
+            "normalized_edit_distance": 0.9344978165938864,
+            "word_accuracy": 0.5405405405405406,
+            "character_accuracy": 0.9344978165938864,
+            "edit_distance": 15
+          },
+          "processing_time": 0.8671245574951172
+        },
+        "sample_04.jpg": {
+          "predicted": "Invoice No.7725 Client:Alpha Omega Inc Address:45 Republic Avenue, Chicago,IL 60602 DescriptionPrice -Monthly Technical Support:250$ -Annual Software License:1200$ Total:1450$",
+          "ground_truth": "Invoice No. 7725 Client: Alpha Omega Inc. Address: 45 Republic Avenue, Chicago, IL 60602 Description Price -------------------------------- - Monthly Technical Support: 250$ - Annual Software License: 1200$ -------------------------------- Total: 1450$",
+          "metrics": {
+            "similarity_ratio": 0.819672131147541,
+            "normalized_edit_distance": 0.6944444444444444,
+            "word_accuracy": 0.23333333333333334,
+            "character_accuracy": 0.6944444444444444,
+            "edit_distance": 77
+          },
+          "processing_time": 1.1794157028198242
+        },
+        "sample_05.jpg": {
+          "predicted": "To Whom It MayConcern, Following our telephone conversation, we hereby confirm our agreement Best regards, Digital Progress Co.",
+          "ground_truth": "To Whom It May Concern, Following our telephone conversation, we hereby confirm our agreement. Best regards, Digital Progress Co.",
+          "metrics": {
+            "similarity_ratio": 0.9921875,
+            "normalized_edit_distance": 0.9844961240310077,
+            "word_accuracy": 0.8421052631578947,
+            "character_accuracy": 0.9844961240310077,
+            "edit_distance": 2
+          },
+          "processing_time": 1.1268181800842285
+        },
+        "sample_06.jpg": {
+          "predicted": "Invoice No.6082 Client: Alpha Omega Inc Address:45 Republic Avenue,Chicago,IL 60602 DescriptionPrice -SoftwareDevelopment:3200$ -User Training Session:800$ -Monthly Technical Support:250$ -Strategic Consultation:1500$ Total:5750$",
+          "ground_truth": "Invoice No. 6082 Client: Alpha Omega Inc. Address: 45 Republic Avenue, Chicago, IL 60602 Description Price -------------------------------- - Software Development: 3200$ - User Training Session: 800$ - Monthly Technical Support: 250$ - Strategic Consultation: 1500$ -------------------------------- Total: 5750$",
+          "metrics": {
+            "similarity_ratio": 0.8481481481481481,
+            "normalized_edit_distance": 0.7363344051446945,
+            "word_accuracy": 0.21052631578947367,
+            "character_accuracy": 0.7363344051446945,
+            "edit_distance": 82
+          },
+          "processing_time": 1.6039745807647705
+        },
+        "sample_07.jpg": {
+          "predicted": "Annual Review2025 Date:22/12/2025 Key Points: Our marketing initiatives have reached a new target audience. Revenue has increased by 12% this quarter. Customer satisfaction remains our top priority,with a score of 9.2/10.",
+          "ground_truth": "Annual Review 2025 Date: 22/12/2025 Key Points: • Our marketing initiatives have reached a new target audience. • Revenue has increased by 12% this quarter. • Customer satisfaction remains our top priority, with a score of 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9800443458980045,
+            "normalized_edit_distance": 0.9608695652173913,
+            "word_accuracy": 0.7567567567567568,
+            "character_accuracy": 0.9608695652173913,
+            "edit_distance": 9
+          },
+          "processing_time": 1.7671012878417969
+        },
+        "sample_08.jpg": {
+          "predicted": "Annual Review 2025 Date: 4/9/2025 Key Points: Revenue has increased by 12% this quarter. Our marketing initiatives have reached a new target audience Customer satisfaction remains our top priority, with a score of 9.2/10",
+          "ground_truth": "Annual Review 2025 Date: 4/9/2025 Key Points: • Revenue has increased by 12% this quarter. • Our marketing initiatives have reached a new target audience. • Customer satisfaction remains our top priority, with a score of 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9821428571428571,
+            "normalized_edit_distance": 0.9649122807017544,
+            "word_accuracy": 0.8648648648648649,
+            "character_accuracy": 0.9649122807017544,
+            "edit_distance": 8
+          },
+          "processing_time": 0.9632735252380371
+        },
+        "sample_09.jpg": {
+          "predicted": "To Whom It May Concern, Following our telephone conversation, we hereby confirm our agreement Sincerely, Alpha Omega Inc.",
+          "ground_truth": "To Whom It May Concern, Following our telephone conversation, we hereby confirm our agreement. Sincerely, Alpha Omega Inc.",
+          "metrics": {
+            "similarity_ratio": 0.9958847736625515,
+            "normalized_edit_distance": 0.9918032786885246,
+            "word_accuracy": 0.9444444444444444,
+            "character_accuracy": 0.9918032786885246,
+            "edit_distance": 1
+          },
+          "processing_time": 0.9215388298034668
+        },
+        "sample_10.jpg": {
+          "predicted": "InvoiceNo.9726 Client:Alpha Omega Inc. Address:123 Future Street,New York.NY 10001 DescriptionPrice -Annual Software License:1200$ -Software Development:3200$ -StrategicConsultation:1500$ Total:5900$",
+          "ground_truth": "Invoice No. 9726 Client: Alpha Omega Inc. Address: 123 Future Street, New York, NY 10001 Description Price -------------------------------- - Annual Software License: 1200$ - Software Development: 3200$ - Strategic Consultation: 1500$ -------------------------------- Total: 5900$",
+          "metrics": {
+            "similarity_ratio": 0.7974947807933194,
+            "normalized_edit_distance": 0.7071428571428571,
+            "word_accuracy": 0.14705882352941177,
+            "character_accuracy": 0.7071428571428571,
+            "edit_distance": 82
+          },
+          "processing_time": 1.2798385620117188
+        },
+        "sample_11.jpg": {
+          "predicted": "Dear Customer, Following our telephone conversation, we hereby confirm our agreement. Best regards, Global Solutions Corp",
+          "ground_truth": "Dear Customer, Following our telephone conversation, we hereby confirm our agreement. Best regards, Global Solutions Corp.",
+          "metrics": {
+            "similarity_ratio": 0.9958847736625515,
+            "normalized_edit_distance": 0.9918032786885246,
+            "word_accuracy": 0.9375,
+            "character_accuracy": 0.9918032786885246,
+            "edit_distance": 1
+          },
+          "processing_time": 1.0565893650054932
+        },
+        "sample_12.jpg": {
+          "predicted": "Annual Review 2025 Date:10/9/2025 Key Points: We plan to launch a new product in the next semester. Our marketing initiatives have reached a new target audience Revenue has increased by 12% this quarter.",
+          "ground_truth": "Annual Review 2025 Date: 10/9/2025 Key Points: • We plan to launch a new product in the next semester. • Our marketing initiatives have reached a new target audience. • Revenue has increased by 12% this quarter.",
+          "metrics": {
+            "similarity_ratio": 0.9806763285024155,
+            "normalized_edit_distance": 0.9620853080568721,
+            "word_accuracy": 0.8378378378378378,
+            "character_accuracy": 0.9620853080568721,
+            "edit_distance": 8
+          },
+          "processing_time": 0.9505777359008789
+        },
+        "sample_13.jpg": {
+          "predicted": "Hello, We remain at your disposal for any further information Best regards Alpha Omega Inc",
+          "ground_truth": "Hello, We remain at your disposal for any further information. Best regards, Alpha Omega Inc.",
+          "metrics": {
+            "similarity_ratio": 0.9836065573770492,
+            "normalized_edit_distance": 0.967741935483871,
+            "word_accuracy": 0.8,
+            "character_accuracy": 0.967741935483871,
+            "edit_distance": 3
+          },
+          "processing_time": 0.9312417507171631
+        },
+        "sample_14.jpg": {
+          "predicted": "DearCustomer, Please find attached the requested documents for your file Best regards, Global Solutions Corp.",
+          "ground_truth": "Dear Customer, Please find attached the requested documents for your file. Best regards, Global Solutions Corp.",
+          "metrics": {
+            "similarity_ratio": 0.990909090909091,
+            "normalized_edit_distance": 0.9819819819819819,
+            "word_accuracy": 0.8125,
+            "character_accuracy": 0.9819819819819819,
+            "edit_distance": 2
+          },
+          "processing_time": 0.8547317981719971
+        },
+        "sample_15.jpg": {
+          "predicted": "To Whom ItMay Concern, We remain at your disposal for any further information. Bestregards, Digital Progress Co.",
+          "ground_truth": "To Whom It May Concern, We remain at your disposal for any further information. Best regards, Digital Progress Co.",
+          "metrics": {
+            "similarity_ratio": 0.9911504424778761,
+            "normalized_edit_distance": 0.9824561403508771,
+            "word_accuracy": 0.7894736842105263,
+            "character_accuracy": 0.9824561403508771,
+            "edit_distance": 2
+          },
+          "processing_time": 0.8526620864868164
+        },
+        "sample_16.jpg": {
+          "predicted": "Monthly Activity Report Date: 11/4/2025 Key Points: Our marketing initiatives have reached a new target audience Revenue has increased by 12% this quarter. Customer satisfaction remains our top priority,with a score of 9.2/10",
+          "ground_truth": "Monthly Activity Report Date: 11/4/2025 Key Points: • Our marketing initiatives have reached a new target audience. • Revenue has increased by 12% this quarter. • Customer satisfaction remains our top priority, with a score of 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9803921568627451,
+            "normalized_edit_distance": 0.9615384615384616,
+            "word_accuracy": 0.8108108108108109,
+            "character_accuracy": 0.9615384615384616,
+            "edit_distance": 9
+          },
+          "processing_time": 1.2227764129638672
+        },
+        "sample_17.jpg": {
+          "predicted": "Monthly Activity Report Date:5/3/2025 Key Points: We plan to launch a new product in the next semester Our marketing initiatives have reached a new target audience",
+          "ground_truth": "Monthly Activity Report Date: 5/3/2025 Key Points: • We plan to launch a new product in the next semester. • Our marketing initiatives have reached a new target audience.",
+          "metrics": {
+            "similarity_ratio": 0.978978978978979,
+            "normalized_edit_distance": 0.9588235294117647,
+            "word_accuracy": 0.7931034482758621,
+            "character_accuracy": 0.9588235294117647,
+            "edit_distance": 7
+          },
+          "processing_time": 0.9856841564178467
+        },
+        "sample_18.jpg": {
+          "predicted": "DearCustomer, We remain at your disposal for any further information Best regards, AlphaOmega Inc.",
+          "ground_truth": "Dear Customer, We remain at your disposal for any further information. Best regards, Alpha Omega Inc.",
+          "metrics": {
+            "similarity_ratio": 0.9849246231155779,
+            "normalized_edit_distance": 0.9702970297029703,
+            "word_accuracy": 0.6875,
+            "character_accuracy": 0.9702970297029703,
+            "edit_distance": 3
+          },
+          "processing_time": 1.7257106304168701
+        },
+        "sample_19.jpg": {
+          "predicted": "Annual Review 2025 Date:5/3/2025 Key Points: Revenue has increased by 12% this guarter. Our marketing initiatives have reached a new targetaudience We plan to launch a new product in.the next semester",
+          "ground_truth": "Annual Review 2025 Date: 5/3/2025 Key Points: • Revenue has increased by 12% this quarter. • Our marketing initiatives have reached a new target audience. • We plan to launch a new product in the next semester.",
+          "metrics": {
+            "similarity_ratio": 0.5756097560975609,
+            "normalized_edit_distance": 0.9428571428571428,
+            "word_accuracy": 0.7027027027027027,
+            "character_accuracy": 0.9428571428571428,
+            "edit_distance": 12
+          },
+          "processing_time": 0.9601631164550781
+        },
+        "sample_20.jpg": {
+          "predicted": "Invoice No.4200 Client: Innovatech LLC Address:123 Future Street,New York,NY 10001 DescriptionPrice -Annual Software License:1200$ -User Training Session:800$ -Software Development:3200$ -Strategic Consultation:1500$ Total:6700$",
+          "ground_truth": "Invoice No. 4200 Client: Innovatech LLC Address: 123 Future Street, New York, NY 10001 Description Price -------------------------------- - Annual Software License: 1200$ - User Training Session: 800$ - Software Development: 3200$ - Strategic Consultation: 1500$ -------------------------------- Total: 6700$",
+          "metrics": {
+            "similarity_ratio": 0.8507462686567164,
+            "normalized_edit_distance": 0.7402597402597403,
+            "word_accuracy": 0.21052631578947367,
+            "character_accuracy": 0.7402597402597403,
+            "edit_distance": 80
+          },
+          "processing_time": 1.5110399723052979
+        }
+      }
+    },
+    "french": {
+      "average_metrics": {
+        "similarity_ratio": 0.8926996570442924,
+        "normalized_edit_distance": 0.8969492590738039,
+        "word_accuracy": 0.5268805381827054,
+        "character_accuracy": 0.8969492590738039,
+        "edit_distance": 24.2
+      },
+      "processed_count": 20,
+      "results": {
+        "sample_01.jpg": {
+          "predicted": "Madame,Monsieur, Suite a'notre conversation téléphonigue, nous-vóus confirmons notre.accord. 'Sinceres salutations Innovatech SARL .*.",
+          "ground_truth": "Madame, Monsieur, Suite à notre conversation téléphonique, nous vous confirmons notre accord. Sincères salutations, Innovatech SARL",
+          "metrics": {
+            "similarity_ratio": 0.9207547169811321,
+            "normalized_edit_distance": 0.8955223880597015,
+            "word_accuracy": 0.3125,
+            "character_accuracy": 0.8955223880597015,
+            "edit_distance": 14
+          },
+          "processing_time": 0.994631290435791
+        },
+        "sample_02.jpg": {
+          "predicted": "Rapport d'ActivitéMensuel Date:11/1/2025 Points clés: -Nos initiatives marketing ont atteint une nouvelle audience cible La satisfaction client reste notre priorité absolue,avec un score de 9.2/10 Nous prévoyons de lancer un nouveau produit au prochain semestre.",
+          "ground_truth": "Rapport d'Activité Mensuel Date: 11/1/2025 Points clés: • Nos initiatives marketing ont atteint une nouvelle audience cible. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10. • Nous prévoyons de lancer un nouveau produit au prochain semestre.",
+          "metrics": {
+            "similarity_ratio": 0.9775280898876404,
+            "normalized_edit_distance": 0.9595588235294118,
+            "word_accuracy": 0.7073170731707317,
+            "character_accuracy": 0.9595588235294118,
+            "edit_distance": 11
+          },
+          "processing_time": 1.1237056255340576
+        },
+        "sample_03.jpg": {
+          "predicted": "Rapport d'Activité Mensuel Date:9/8/2025 Points'clés: -Nous prévoyons de lancer un nouveau produit au prochain semestre -La satisfaction client reste notre prioritéabsolue,avec un score de 9.2/10",
+          "ground_truth": "Rapport d'Activité Mensuel Date: 9/8/2025 Points clés: • Nous prévoyons de lancer un nouveau produit au prochain semestre. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9622166246851386,
+            "normalized_edit_distance": 0.9504950495049505,
+            "word_accuracy": 0.5806451612903226,
+            "character_accuracy": 0.9504950495049505,
+            "edit_distance": 10
+          },
+          "processing_time": 0.7332515716552734
+        },
+        "sample_04.jpg": {
+          "predicted": "FactureN°1367 ClientSolutions Globales SA Adresse78Boulevard de la Liberté,13001 Marseille DescriptionPrix -Formation Utilisateur:800€ -Licence Logiciel Annuelle1200€ Total:2000€",
+          "ground_truth": "Facture N° 1367 Client: Solutions Globales SA Adresse: 78 Boulevard de la Liberté, 13001 Marseille Description Prix -------------------------------- - Formation Utilisateur: 800€ - Licence Logiciel Annuelle: 1200€ -------------------------------- Total: 2000€",
+          "metrics": {
+            "similarity_ratio": 0.8146453089244852,
+            "normalized_edit_distance": 0.6872586872586872,
+            "word_accuracy": 0.2,
+            "character_accuracy": 0.6872586872586872,
+            "edit_distance": 81
+          },
+          "processing_time": 1.2794976234436035
+        },
+        "sample_05.jpg": {
+          "predicted": "Bonjour, Nous restons ävotre disposition pour toute information complémentaire Cordialement, Solutions Globales SA",
+          "ground_truth": "Bonjour, Nous restons à votre disposition pour toute information complémentaire. Cordialement, Solutions Globales SA",
+          "metrics": {
+            "similarity_ratio": 0.9826086956521739,
+            "normalized_edit_distance": 0.9741379310344828,
+            "word_accuracy": 0.7857142857142857,
+            "character_accuracy": 0.9741379310344828,
+            "edit_distance": 3
+          },
+          "processing_time": 0.8979034423828125
+        },
+        "sample_06.jpg": {
+          "predicted": "Bilan Annuel 2025 Date:3/12/2025 Points clés: -Nos initiatives marketing ont atteint une nouvelle audience cible - La satisfaction client reste notre priorité absolue, avec un score de 9.2/10",
+          "ground_truth": "Bilan Annuel 2025 Date: 3/12/2025 Points clés: • Nos initiatives marketing ont atteint une nouvelle audience cible. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9792746113989638,
+            "normalized_edit_distance": 0.9692307692307692,
+            "word_accuracy": 0.7666666666666667,
+            "character_accuracy": 0.9692307692307692,
+            "edit_distance": 6
+          },
+          "processing_time": 0.762887716293335
+        },
+        "sample_07.jpg": {
+          "predicted": "Cher client, Nous restons a votre disposition pour toute information complémentaire. Sincéres salutations innovatechSARL",
+          "ground_truth": "Cher client, Nous restons à votre disposition pour toute information complémentaire. Sincères salutations, Innovatech SARL",
+          "metrics": {
+            "similarity_ratio": 0.9669421487603306,
+            "normalized_edit_distance": 0.9590163934426229,
+            "word_accuracy": 0.6666666666666666,
+            "character_accuracy": 0.9590163934426229,
+            "edit_distance": 5
+          },
+          "processing_time": 0.7173519134521484
+        },
+        "sample_08.jpg": {
+          "predicted": "Analyse.de Performancé.Trimestrielle Date:6/6/2025 Points.clés: Nous prévoyons de.lancer un nouveau produit au.prochain semestre. -Nos.initiatives marketing ont atteint une nouvelle audience.cible.",
+          "ground_truth": "Analyse de Performance Trimestrielle Date: 6/6/2025 Points clés: • Nous prévoyons de lancer un nouveau produit au prochain semestre. • Nos initiatives marketing ont atteint une nouvelle audience cible.",
+          "metrics": {
+            "similarity_ratio": 0.3015075376884422,
+            "normalized_edit_distance": 0.9353233830845771,
+            "word_accuracy": 0.3793103448275862,
+            "character_accuracy": 0.9353233830845771,
+            "edit_distance": 13
+          },
+          "processing_time": 0.43408203125
+        },
+        "sample_09.jpg": {
+          "predicted": "Bilan Annuel 2025 Date: 9/6/2025 Points clés: - Nous prévoyons de lancer un nouveau produit au prochain semestre La satisfaction client reste notre priorité absolue, avec un score de 9.2/10",
+          "ground_truth": "Bilan Annuel 2025 Date: 9/6/2025 Points clés: • Nous prévoyons de lancer un nouveau produit au prochain semestre. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10.",
+          "metrics": {
+            "similarity_ratio": 0.9842931937172775,
+            "normalized_edit_distance": 0.9740932642487047,
+            "word_accuracy": 0.8709677419354839,
+            "character_accuracy": 0.9740932642487047,
+            "edit_distance": 5
+          },
+          "processing_time": 0.7794270515441895
+        },
+        "sample_10.jpg": {
+          "predicted": "Madame,Monsieur Suite a notre conversation téléphonigue,nous vous confirmons notre accord Sincéres salutations Le Progres Numérique",
+          "ground_truth": "Madame, Monsieur, Suite à notre conversation téléphonique, nous vous confirmons notre accord. Sincères salutations, Le Progrès Numérique",
+          "metrics": {
+            "similarity_ratio": 0.951310861423221,
+            "normalized_edit_distance": 0.9338235294117647,
+            "word_accuracy": 0.47058823529411764,
+            "character_accuracy": 0.9338235294117647,
+            "edit_distance": 9
+          },
+          "processing_time": 0.8223609924316406
+        },
+        "sample_11.jpg": {
+          "predicted": "Facture N2185 ClientLe Progres Numérique Adresse:123Ruedel'Avenir.75001Paris DescriptionPrix -LicenceLogiciel Annuelle:.1200€ -Consultation Stratégique1500€ -Développement.Logiciel:3200€ Total:5900€",
+          "ground_truth": "Facture N° 2185 Client: Le Progrès Numérique Adresse: 123 Rue de l'Avenir, 75001 Paris Description Prix -------------------------------- - Licence Logiciel Annuelle: 1200€ - Consultation Stratégique: 1500€ - Développement Logiciel: 3200€ -------------------------------- Total: 5900€",
+          "metrics": {
+            "similarity_ratio": 0.681912681912682,
+            "normalized_edit_distance": 0.6855123674911661,
+            "word_accuracy": 0.06060606060606061,
+            "character_accuracy": 0.6855123674911661,
+            "edit_distance": 89
+          },
+          "processing_time": 1.4548187255859375
+        },
+        "sample_12.jpg": {
+          "predicted": "Facture N°3716 Client:Alpha Omega Inc Adresse45Avenue de la République,69002 Lyon DescriptionPrix -Développement Logiciel3200€ -Support Technique Mensuel:250€ Total:3450€",
+          "ground_truth": "Facture N° 3716 Client: Alpha Omega Inc. Adresse: 45 Avenue de la République, 69002 Lyon Description Prix -------------------------------- - Développement Logiciel: 3200€ - Support Technique Mensuel: 250€ -------------------------------- Total: 3450€",
+          "metrics": {
+            "similarity_ratio": 0.8095238095238095,
+            "normalized_edit_distance": 0.6799999999999999,
+            "word_accuracy": 0.2,
+            "character_accuracy": 0.6799999999999999,
+            "edit_distance": 80
+          },
+          "processing_time": 1.1784768104553223
+        },
+        "sample_13.jpg": {
+          "predicted": "Analyse de Performance Trimestrielle Date;5/2/2025 Points clés: Nos initiativés marketing ont atteint une nouvelle audience cible Le chiffred'affairesa augmentéde12%ce trimestre.",
+          "ground_truth": "Analyse de Performance Trimestrielle Date: 5/2/2025 Points clés: • Nos initiatives marketing ont atteint une nouvelle audience cible. • Le chiffre d'affaires a augmenté de 12% ce trimestre.",
+          "metrics": {
+            "similarity_ratio": 0.9591280653950953,
+            "normalized_edit_distance": 0.9312169312169312,
+            "word_accuracy": 0.5357142857142857,
+            "character_accuracy": 0.9312169312169312,
+            "edit_distance": 13
+          },
+          "processing_time": 0.7904636859893799
+        },
+        "sample_14.jpg": {
+          "predicted": "Rapport.d'ActiviteMensuel Date:1/7/2025 Points clés: -Nos initiatives-marketing ont atteint une nouvelle audience cible. La satisfaction client reste notre priorité absolue.avec un'score de 9.2/10 -Le chiffred'affairesaaugmentéde12%ce trimestre",
+          "ground_truth": "Rapport d'Activité Mensuel Date: 1/7/2025 Points clés: • Nos initiatives marketing ont atteint une nouvelle audience cible. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10. • Le chiffre d'affaires a augmenté de 12% ce trimestre.",
+          "metrics": {
+            "similarity_ratio": 0.8986083499005965,
+            "normalized_edit_distance": 0.915057915057915,
+            "word_accuracy": 0.375,
+            "character_accuracy": 0.915057915057915,
+            "edit_distance": 22
+          },
+          "processing_time": 0.9983654022216797
+        },
+        "sample_15.jpg": {
+          "predicted": "Bonjour, Veuillez trouver ci-joint les documents demandés pour votre dossier. Cordialement, Le Progres Numérique",
+          "ground_truth": "Bonjour, Veuillez trouver ci-joint les documents demandés pour votre dossier. Cordialement, Le Progrès Numérique",
+          "metrics": {
+            "similarity_ratio": 0.9910714285714286,
+            "normalized_edit_distance": 0.9910714285714286,
+            "word_accuracy": 0.9285714285714286,
+            "character_accuracy": 0.9910714285714286,
+            "edit_distance": 1
+          },
+          "processing_time": 0.9459576606750488
+        },
+        "sample_16.jpg": {
+          "predicted": "Cher'client, Suitea.notreconversation téléphonigue,nous vous.confirmons notre acco Bien.avous, Alpha Omega inc",
+          "ground_truth": "Cher client, Suite à notre conversation téléphonique, nous vous confirmons notre accord. Bien à vous, Alpha Omega Inc.",
+          "metrics": {
+            "similarity_ratio": 0.8947368421052632,
+            "normalized_edit_distance": 0.864406779661017,
+            "word_accuracy": 0.16666666666666666,
+            "character_accuracy": 0.864406779661017,
+            "edit_distance": 16
+          },
+          "processing_time": 0.7607612609863281
+        },
+        "sample_17.jpg": {
+          "predicted": "Analyse de Performance Trimestrielle Date:24/6/2025 Points clés: -Nos initiatives marketing ont atteint une nouvelle audience cible La satisfaction client reste notre priorité absolue,avec un score de 9.2/10. Le chiffre d'affaires a augmentéde 12% ce trimestre",
+          "ground_truth": "Analyse de Performance Trimestrielle Date: 24/6/2025 Points clés: • Nos initiatives marketing ont atteint une nouvelle audience cible. • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10. • Le chiffre d'affaires a augmenté de 12% ce trimestre.",
+          "metrics": {
+            "similarity_ratio": 0.9773584905660377,
+            "normalized_edit_distance": 0.9592592592592593,
+            "word_accuracy": 0.7073170731707317,
+            "character_accuracy": 0.9592592592592593,
+            "edit_distance": 11
+          },
+          "processing_time": 0.9873485565185547
+        },
+        "sample_18.jpg": {
+          "predicted": "Bilan Annuel 2025 Date: 6/7/2025 Points clés: La satisfaction client reste notre priorité absolue,avec un score de 9.2/10. Nos initiatives marketing ont atteint une nouvelle audience cible ·Le chiffre d'affaires a augmentéde 12% ce trimestre",
+          "ground_truth": "Bilan Annuel 2025 Date: 6/7/2025 Points clés: • La satisfaction client reste notre priorité absolue, avec un score de 9.2/10. • Nos initiatives marketing ont atteint une nouvelle audience cible. • Le chiffre d'affaires a augmenté de 12% ce trimestre.",
+          "metrics": {
+            "similarity_ratio": 0.9735234215885947,
+            "normalized_edit_distance": 0.96,
+            "word_accuracy": 0.75,
+            "character_accuracy": 0.96,
+            "edit_distance": 10
+          },
+          "processing_time": 0.7875125408172607
+        },
+        "sample_19.jpg": {
+          "predicted": "Bonjour, Veuillez trouver ci-joint les documents demandés pour votre dossier Sinceres salutations, Innovatech SARL",
+          "ground_truth": "Bonjour, Veuillez trouver ci-joint les documents demandés pour votre dossier. Sincères salutations, Innovatech SARL",
+          "metrics": {
+            "similarity_ratio": 0.9868995633187773,
+            "normalized_edit_distance": 0.9826086956521739,
+            "word_accuracy": 0.8571428571428571,
+            "character_accuracy": 0.9826086956521739,
+            "edit_distance": 2
+          },
+          "processing_time": 0.7809326648712158
+        },
+        "sample_20.jpg": {
+          "predicted": "Facture N°2998 Client: Alpha Omega Inc. Adresse123 Rue de I'Avenir,75001 Paris DescriptionPrix -Formation Utilisateur:800€ -Licence.Logiciel Annuelle:1200€ -ConsultationStratégique:1500€ -Développement Logiciel:3200€ .Total:6700€",
+          "ground_truth": "Facture N° 2998 Client: Alpha Omega Inc. Adresse: 123 Rue de l'Avenir, 75001 Paris Description Prix -------------------------------- - Formation Utilisateur: 800€ - Licence Logiciel Annuelle: 1200€ - Consultation Stratégique: 1500€ - Développement Logiciel: 3200€ -------------------------------- Total: 6700€",
+          "metrics": {
+            "similarity_ratio": 0.8401486988847584,
+            "normalized_edit_distance": 0.7313915857605178,
+            "word_accuracy": 0.21621621621621623,
+            "character_accuracy": 0.7313915857605178,
+            "edit_distance": 83
+          },
+          "processing_time": 1.231119155883789
+        }
+      }
+    }
+  }
+}
