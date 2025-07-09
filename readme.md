@@ -27,3 +27,9 @@ Cloud_vision_key = 'key_here'
 ## EasyOCR
 
 run `prototype\test_ocr\easyOCR.py`
+
+## Kraken
+
+Download pretrained model from [here](https://zenodo.org/records/2577813/files/en_best.mlmodel?download=1) and put into prototypes/models/
+
+run `prototype\test_ocr\kraken_ocr.py`
