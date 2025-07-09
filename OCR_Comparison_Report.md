@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-Based on comprehensive testing of 4 OCR solutions using 40 sample images (20 English, 20 French), this report provides analysis and recommendations for optimal OCR integration into the Hekate ecosystem.
+Based on comprehensive testing of 4 OCR solutions using 40 sample images (20 English, 20 French), this report provides analysis and recommendations for optimal OCR integration into the Hekate ecosystem. The code include Google Cloud Vision but because I have some problem with API Key, I will take it out of the comparison table.
 
 ## Test Environment
 
